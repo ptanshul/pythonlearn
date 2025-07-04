@@ -19,4 +19,3 @@ print("After sorting the list:", thelist)
 thelist.reverse()       
 print("After reversing the list:", thelist)
 thelist.insert(0, "one")
-print
