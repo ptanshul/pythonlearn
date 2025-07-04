@@ -22,3 +22,6 @@ thelist.insert(0, "one")
 print("After inserting 'one' at the beginning:", thelist)
 thelist.insert(0,"one")
 print("After inserting 'one' again at the beginning:", thelist)
+#Duplicate are allowed in list
+thelist.pop()
+print("After popping the last element:", thelist)
