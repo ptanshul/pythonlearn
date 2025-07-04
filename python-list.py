@@ -29,5 +29,5 @@ print("After popping the last element:", thelist)
 #List comprehension
 
 
-quares = [x**2 for x in range(10)]
+squares = [x**2 for x in range(10)]
 print("List comprehension for squares of numbers 0-9:", squares)
