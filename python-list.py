@@ -69,3 +69,7 @@ print("List comprehension for words in sentence with more than 2 characters:", w
 dict_values = {"a": 1, "b": 2, "c": 3}
 dict_list = [value for value in dict_values.values() if value > 1]
 print("List comprehension for values in dictionary greater than 1:", dict_list)
+# List comprehension with set creation
+unique_squares = {x**2 for x in range(10)}
+print("Set comprehension for unique squares of numbers 0-9:", unique_squares)   
+# List comprehension with filtering and transformation
