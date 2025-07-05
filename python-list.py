@@ -44,3 +44,14 @@ def square(x):
     return x * x
 squared_numbers = [square(x) for x in range(10)]
 print("List comprehension using a function for squares of numbers 0-9:", squared_numbers)   
+
+# List comprehension with multiple conditions
+filtered_numbers = [x for x in range(100) if x % 2 == 0 and x > 50]
+print("List comprehension for even numbers greater than 50:", filtered_numbers)
+# List comprehension with multiple loops
+cartesian_product = [(x, y) for x in range(3) for y in range(3)]
+print("List comprehension for Cartesian product of range(3):", cartesian_product)
+# List comprehension with string manipulation
+words = ["hello", "world", "python"]
+capitalized_words = [word.capitalize() for word in words]
+print("List comprehension for capitalized words:", capitalized_words)
