@@ -65,3 +65,7 @@ print("List comprehension with conditional expression for numbers 0-9:", conditi
 sentence = "Python is great"    
 words_in_sentence = [word for word in sentence.split() if len(word) > 2]
 print("List comprehension for words in sentence with more than 2 characters:", words_in_sentence)
+# List comprehension with dictionary values
+dict_values = {"a": 1, "b": 2, "c": 3}
+dict_list = [value for value in dict_values.values() if value > 1]
+print("List comprehension for values in dictionary greater than 1:", dict_list)
