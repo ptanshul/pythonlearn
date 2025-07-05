@@ -39,3 +39,8 @@ print("List comprehension for even numbers 0-19:", evens)
 # Nested list comprehension
 matrix = [[j for j in range(3)] for i in range(3)]
 print("Nested list comprehension for a 3x3 matrix:", matrix)
+# List comprehension with function
+def square(x):
+    return x * x
+squared_numbers = [square(x) for x in range(10)]
+print("List comprehension using a function for squares of numbers 0-9:", squared_numbers)   
