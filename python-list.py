@@ -36,3 +36,6 @@ print("List comprehension for cubes of numbers 0-9:", cubes)
 # List comprehension with condition
 evens = [x for x in range(20) if x % 2 == 0]
 print("List comprehension for even numbers 0-19:", evens)
+# Nested list comprehension
+matrix = [[j for j in range(3)] for i in range(3)]
+print("Nested list comprehension for a 3x3 matrix:", matrix)
