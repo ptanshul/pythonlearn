@@ -34,3 +34,5 @@ print("List comprehension for squares of numbers 0-9:", squares)
 cubes = [x**3 for x in range(10)]
 print("List comprehension for cubes of numbers 0-9:", cubes)
 # List comprehension with condition
+evens = [x for x in range(20) if x % 2 == 0]
+print("List comprehension for even numbers 0-19:", evens)
