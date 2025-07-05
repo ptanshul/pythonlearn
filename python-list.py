@@ -76,6 +76,9 @@ print("Set comprehension for unique squares of numbers 0-9:", unique_squares)
 # List comprehension with filtering and transformation
 filtered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]  
 print("List comprehension for squares of numbers 0-19 that are multiples of 3:", filtered_and_transformed)
+# List comprehension with conditional expression
+conditional_list = [x if x % 2 == 0 else -x for x in range(10)] 
+print("List comprehension with conditional expression for numbers 0-9:", conditional_list)
 
 
 
