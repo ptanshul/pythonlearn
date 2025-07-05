@@ -72,4 +72,11 @@ print("List comprehension for values in dictionary greater than 1:", dict_list)
 # List comprehension with set creation
 unique_squares = {x**2 for x in range(10)}
 print("Set comprehension for unique squares of numbers 0-9:", unique_squares)   
+
 # List comprehension with filtering and transformation
+filtered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]  
+print("List comprehension for squares of numbers 0-19 that are multiples of 3:", filtered_and_transformed)
+
+
+
+
