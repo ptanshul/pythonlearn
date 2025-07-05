@@ -61,3 +61,6 @@ print("List comprehension for squares of numbers 0-19 that are multiples of 3:",
 # List comprehension with conditional expression
 conditional_list = [x if x % 2 == 0 else -x for x in range(10)] 
 print("List comprehension with conditional expression for numbers 0-9:", conditional_list)
+# List comprehension with string splitting
+sentence = "Python is great"    
+words_in_sentence = [word for word in sentence.split() if len(word) > 2]
