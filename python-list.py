@@ -55,3 +55,6 @@ print("List comprehension for Cartesian product of range(3):", cartesian_product
 words = ["hello", "world", "python"]
 capitalized_words = [word.capitalize() for word in words]
 print("List comprehension for capitalized words:", capitalized_words)
+# List comprehension with filtering and transformation
+filtered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]
+print("List comprehension for squares of numbers 0-19 that are multiples of 3:", filtered_and_transformed)
