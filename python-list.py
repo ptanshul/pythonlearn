@@ -64,3 +64,4 @@ print("List comprehension with conditional expression for numbers 0-9:", conditi
 # List comprehension with string splitting
 sentence = "Python is great"    
 words_in_sentence = [word for word in sentence.split() if len(word) > 2]
+print("List comprehension for words in sentence with more than 2 characters:", words_in_sentence)
