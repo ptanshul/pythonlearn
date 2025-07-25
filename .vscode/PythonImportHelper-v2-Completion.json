@@ -1,0 +1,200 @@
+[
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 2,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "def square(x):\n    return x * x\nsquared_numbers = [square(x) for x in range(10)]\nprint(\"List comprehension using a function for squares of numbers 0-9:\", squared_numbers)   \n# List comprehension with multiple conditions\nfiltered_numbers = [x for x in range(100) if x % 2 == 0 and x > 50]\nprint(\"List comprehension for even numbers greater than 50:\", filtered_numbers)\n# List comprehension with multiple loops\ncartesian_product = [(x, y) for x in range(3) for y in range(3)]\nprint(\"List comprehension for Cartesian product of range(3):\", cartesian_product)",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "thelist",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "thelist = [\"one\", \"two\", \"three\", \"four\", \"five\"]\nprint(\"The list is:\", thelist)\n#List functions\nprint(\"The first element is:\", thelist[0])\nprint(\"The last element is:\", thelist[-1])\nprint(\"The first two elements are:\", thelist[0:2])  \n#List methods\nthelist.append(\"six\")\nprint(\"After appending 'six':\", thelist)\nthelist.remove(\"three\") ",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "squares",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "squares = [x**2 for x in range(10)]\nprint(\"List comprehension for squares of numbers 0-9:\", squares)\ncubes = [x**3 for x in range(10)]\nprint(\"List comprehension for cubes of numbers 0-9:\", cubes)\n# List comprehension with condition\nevens = [x for x in range(20) if x % 2 == 0]\nprint(\"List comprehension for even numbers 0-19:\", evens)\n# Nested list comprehension\nmatrix = [[j for j in range(3)] for i in range(3)]\nprint(\"Nested list comprehension for a 3x3 matrix:\", matrix)",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "cubes",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "cubes = [x**3 for x in range(10)]\nprint(\"List comprehension for cubes of numbers 0-9:\", cubes)\n# List comprehension with condition\nevens = [x for x in range(20) if x % 2 == 0]\nprint(\"List comprehension for even numbers 0-19:\", evens)\n# Nested list comprehension\nmatrix = [[j for j in range(3)] for i in range(3)]\nprint(\"Nested list comprehension for a 3x3 matrix:\", matrix)\n# List comprehension with function\ndef square(x):",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "evens",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "evens = [x for x in range(20) if x % 2 == 0]\nprint(\"List comprehension for even numbers 0-19:\", evens)\n# Nested list comprehension\nmatrix = [[j for j in range(3)] for i in range(3)]\nprint(\"Nested list comprehension for a 3x3 matrix:\", matrix)\n# List comprehension with function\ndef square(x):\n    return x * x\nsquared_numbers = [square(x) for x in range(10)]\nprint(\"List comprehension using a function for squares of numbers 0-9:\", squared_numbers)   ",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "matrix = [[j for j in range(3)] for i in range(3)]\nprint(\"Nested list comprehension for a 3x3 matrix:\", matrix)\n# List comprehension with function\ndef square(x):\n    return x * x\nsquared_numbers = [square(x) for x in range(10)]\nprint(\"List comprehension using a function for squares of numbers 0-9:\", squared_numbers)   \n# List comprehension with multiple conditions\nfiltered_numbers = [x for x in range(100) if x % 2 == 0 and x > 50]\nprint(\"List comprehension for even numbers greater than 50:\", filtered_numbers)",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "squared_numbers",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "squared_numbers = [square(x) for x in range(10)]\nprint(\"List comprehension using a function for squares of numbers 0-9:\", squared_numbers)   \n# List comprehension with multiple conditions\nfiltered_numbers = [x for x in range(100) if x % 2 == 0 and x > 50]\nprint(\"List comprehension for even numbers greater than 50:\", filtered_numbers)\n# List comprehension with multiple loops\ncartesian_product = [(x, y) for x in range(3) for y in range(3)]\nprint(\"List comprehension for Cartesian product of range(3):\", cartesian_product)\n# List comprehension with string manipulation\nwords = [\"hello\", \"world\", \"python\"]",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "filtered_numbers",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "filtered_numbers = [x for x in range(100) if x % 2 == 0 and x > 50]\nprint(\"List comprehension for even numbers greater than 50:\", filtered_numbers)\n# List comprehension with multiple loops\ncartesian_product = [(x, y) for x in range(3) for y in range(3)]\nprint(\"List comprehension for Cartesian product of range(3):\", cartesian_product)\n# List comprehension with string manipulation\nwords = [\"hello\", \"world\", \"python\"]\ncapitalized_words = [word.capitalize() for word in words]\nprint(\"List comprehension for capitalized words:\", capitalized_words)\n# List comprehension with filtering and transformation",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "cartesian_product",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "cartesian_product = [(x, y) for x in range(3) for y in range(3)]\nprint(\"List comprehension for Cartesian product of range(3):\", cartesian_product)\n# List comprehension with string manipulation\nwords = [\"hello\", \"world\", \"python\"]\ncapitalized_words = [word.capitalize() for word in words]\nprint(\"List comprehension for capitalized words:\", capitalized_words)\n# List comprehension with filtering and transformation\nfiltered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]\nprint(\"List comprehension for squares of numbers 0-19 that are multiples of 3:\", filtered_and_transformed)\n# List comprehension with conditional expression",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "words = [\"hello\", \"world\", \"python\"]\ncapitalized_words = [word.capitalize() for word in words]\nprint(\"List comprehension for capitalized words:\", capitalized_words)\n# List comprehension with filtering and transformation\nfiltered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]\nprint(\"List comprehension for squares of numbers 0-19 that are multiples of 3:\", filtered_and_transformed)\n# List comprehension with conditional expression\nconditional_list = [x if x % 2 == 0 else -x for x in range(10)] \nprint(\"List comprehension with conditional expression for numbers 0-9:\", conditional_list)\n# List comprehension with string splitting",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "capitalized_words",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "capitalized_words = [word.capitalize() for word in words]\nprint(\"List comprehension for capitalized words:\", capitalized_words)\n# List comprehension with filtering and transformation\nfiltered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]\nprint(\"List comprehension for squares of numbers 0-19 that are multiples of 3:\", filtered_and_transformed)\n# List comprehension with conditional expression\nconditional_list = [x if x % 2 == 0 else -x for x in range(10)] \nprint(\"List comprehension with conditional expression for numbers 0-9:\", conditional_list)\n# List comprehension with string splitting\nsentence = \"Python is great\"    ",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "filtered_and_transformed",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "filtered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]\nprint(\"List comprehension for squares of numbers 0-19 that are multiples of 3:\", filtered_and_transformed)\n# List comprehension with conditional expression\nconditional_list = [x if x % 2 == 0 else -x for x in range(10)] \nprint(\"List comprehension with conditional expression for numbers 0-9:\", conditional_list)\n# List comprehension with string splitting\nsentence = \"Python is great\"    \nwords_in_sentence = [word for word in sentence.split() if len(word) > 2]\nprint(\"List comprehension for words in sentence with more than 2 characters:\", words_in_sentence)\n# List comprehension with dictionary values",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "conditional_list",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "conditional_list = [x if x % 2 == 0 else -x for x in range(10)] \nprint(\"List comprehension with conditional expression for numbers 0-9:\", conditional_list)\n# List comprehension with string splitting\nsentence = \"Python is great\"    \nwords_in_sentence = [word for word in sentence.split() if len(word) > 2]\nprint(\"List comprehension for words in sentence with more than 2 characters:\", words_in_sentence)\n# List comprehension with dictionary values\ndict_values = {\"a\": 1, \"b\": 2, \"c\": 3}\ndict_list = [value for value in dict_values.values() if value > 1]\nprint(\"List comprehension for values in dictionary greater than 1:\", dict_list)",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "sentence = \"Python is great\"    \nwords_in_sentence = [word for word in sentence.split() if len(word) > 2]\nprint(\"List comprehension for words in sentence with more than 2 characters:\", words_in_sentence)\n# List comprehension with dictionary values\ndict_values = {\"a\": 1, \"b\": 2, \"c\": 3}\ndict_list = [value for value in dict_values.values() if value > 1]\nprint(\"List comprehension for values in dictionary greater than 1:\", dict_list)\n# List comprehension with set creation\nunique_squares = {x**2 for x in range(10)}\nprint(\"Set comprehension for unique squares of numbers 0-9:\", unique_squares)   ",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "words_in_sentence",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "words_in_sentence = [word for word in sentence.split() if len(word) > 2]\nprint(\"List comprehension for words in sentence with more than 2 characters:\", words_in_sentence)\n# List comprehension with dictionary values\ndict_values = {\"a\": 1, \"b\": 2, \"c\": 3}\ndict_list = [value for value in dict_values.values() if value > 1]\nprint(\"List comprehension for values in dictionary greater than 1:\", dict_list)\n# List comprehension with set creation\nunique_squares = {x**2 for x in range(10)}\nprint(\"Set comprehension for unique squares of numbers 0-9:\", unique_squares)   \n# List comprehension with filtering and transformation",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "dict_values",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "dict_values = {\"a\": 1, \"b\": 2, \"c\": 3}\ndict_list = [value for value in dict_values.values() if value > 1]\nprint(\"List comprehension for values in dictionary greater than 1:\", dict_list)\n# List comprehension with set creation\nunique_squares = {x**2 for x in range(10)}\nprint(\"Set comprehension for unique squares of numbers 0-9:\", unique_squares)   \n# List comprehension with filtering and transformation\nfiltered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]  \nprint(\"List comprehension for squares of numbers 0-19 that are multiples of 3:\", filtered_and_transformed)\n# List comprehension with conditional expression",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "dict_list",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "dict_list = [value for value in dict_values.values() if value > 1]\nprint(\"List comprehension for values in dictionary greater than 1:\", dict_list)\n# List comprehension with set creation\nunique_squares = {x**2 for x in range(10)}\nprint(\"Set comprehension for unique squares of numbers 0-9:\", unique_squares)   \n# List comprehension with filtering and transformation\nfiltered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]  \nprint(\"List comprehension for squares of numbers 0-19 that are multiples of 3:\", filtered_and_transformed)\n# List comprehension with conditional expression\nconditional_list = [x if x % 2 == 0 else -x for x in range(10)] ",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "unique_squares",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "unique_squares = {x**2 for x in range(10)}\nprint(\"Set comprehension for unique squares of numbers 0-9:\", unique_squares)   \n# List comprehension with filtering and transformation\nfiltered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]  \nprint(\"List comprehension for squares of numbers 0-19 that are multiples of 3:\", filtered_and_transformed)\n# List comprehension with conditional expression\nconditional_list = [x if x % 2 == 0 else -x for x in range(10)] \nprint(\"List comprehension with conditional expression for numbers 0-9:\", conditional_list)",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "filtered_and_transformed",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "filtered_and_transformed = [x**2 for x in range(20) if x % 3 == 0]  \nprint(\"List comprehension for squares of numbers 0-19 that are multiples of 3:\", filtered_and_transformed)\n# List comprehension with conditional expression\nconditional_list = [x if x % 2 == 0 else -x for x in range(10)] \nprint(\"List comprehension with conditional expression for numbers 0-9:\", conditional_list)",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "conditional_list",
+        "kind": 5,
+        "importPath": "python-list",
+        "description": "python-list",
+        "peekOfCode": "conditional_list = [x if x % 2 == 0 else -x for x in range(10)] \nprint(\"List comprehension with conditional expression for numbers 0-9:\", conditional_list)",
+        "detail": "python-list",
+        "documentation": {}
+    },
+    {
+        "label": "tensor_1d",
+        "kind": 5,
+        "importPath": "pytorchtest",
+        "description": "pytorchtest",
+        "peekOfCode": "tensor_1d = torch.tensor([1, 2, 3])\nprint(\"1D Tensor (Vector):\")\nprint(tensor_1d)\nprint()",
+        "detail": "pytorchtest",
+        "documentation": {}
+    }
+]
