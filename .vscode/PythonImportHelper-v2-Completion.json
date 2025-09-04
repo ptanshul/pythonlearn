@@ -49,11 +49,11 @@
         "documentation": {}
     },
     {
-        "label": "Product",
+        "label": "Person",
         "kind": 6,
         "importPath": "pydantic1",
         "description": "pydantic1",
-        "peekOfCode": "class Product(BaseModel):\n    name: str\n    price: float\n    in_stock: bool = True  # default value\n# ✅ valid data\np1 = Product(name=\"Laptop\", price=49999.99)\nprint(p1)\n# ❌ invalid data\ntry:\n    p2 = Product(name=\"Mouse\", price=\"cheap\")  # \"cheap\" is not a float",
+        "peekOfCode": "class Person(BaseModel):\n    name: str\n    age: int\n# valid\np1 = Person(name=\"Alice\", age=30)\nprint(p1)\n# invalid\ntry:\n    p2 = Person(name=\"Bob\", age=\"thirty\")  # string instead of int\nexcept Exception as e:",
         "detail": "pydantic1",
         "documentation": {}
     },
@@ -62,7 +62,7 @@
         "kind": 5,
         "importPath": "pydantic1",
         "description": "pydantic1",
-        "peekOfCode": "p1 = Product(name=\"Laptop\", price=49999.99)\nprint(p1)\n# ❌ invalid data\ntry:\n    p2 = Product(name=\"Mouse\", price=\"cheap\")  # \"cheap\" is not a float\nexcept Exception as e:\n    print(e)",
+        "peekOfCode": "p1 = Person(name=\"Alice\", age=30)\nprint(p1)\n# invalid\ntry:\n    p2 = Person(name=\"Bob\", age=\"thirty\")  # string instead of int\nexcept Exception as e:\n    print(e)",
         "detail": "pydantic1",
         "documentation": {}
     },

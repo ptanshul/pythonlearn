@@ -1,16 +1,15 @@
 from pydantic import BaseModel
 
-class Product(BaseModel):
+class Person(BaseModel):
     name: str
-    price: float
-    in_stock: bool = True  # default value
+    age: int
 
-# ✅ valid data
-p1 = Product(name="Laptop", price=49999.99)
+# valid
+p1 = Person(name="Alice", age=30)
 print(p1)
 
-# ❌ invalid data
+# invalid
 try:
-    p2 = Product(name="Mouse", price="cheap")  # "cheap" is not a float
+    p2 = Person(name="Bob", age="thirty")  # string instead of int
 except Exception as e:
     print(e)
