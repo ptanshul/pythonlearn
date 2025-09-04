@@ -10,6 +10,6 @@ print(p1)
 
 # invalid
 try:
-    p2 = Person(name="Bob", age="thirty")  # string instead of int
+    p2 = Person(name="Bob", age="44")  # string instead of int
 except Exception as e:
     print(e)

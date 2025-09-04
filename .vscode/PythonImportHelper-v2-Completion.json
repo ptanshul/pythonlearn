@@ -53,7 +53,7 @@
         "kind": 6,
         "importPath": "pydantic1",
         "description": "pydantic1",
-        "peekOfCode": "class Person(BaseModel):\n    name: str\n    age: int\n# valid\np1 = Person(name=\"Alice\", age=30)\nprint(p1)\n# invalid\ntry:\n    p2 = Person(name=\"Bob\", age=\"thirty\")  # string instead of int\nexcept Exception as e:",
+        "peekOfCode": "class Person(BaseModel):\n    name: str\n    age: int\n# valid\np1 = Person(name=\"Alice\", age=30)\nprint(p1)\n# invalid\ntry:\n    p2 = Person(name=\"Bob\", age=\"44\")  # string instead of int\nexcept Exception as e:",
         "detail": "pydantic1",
         "documentation": {}
     },
@@ -62,7 +62,7 @@
         "kind": 5,
         "importPath": "pydantic1",
         "description": "pydantic1",
-        "peekOfCode": "p1 = Person(name=\"Alice\", age=30)\nprint(p1)\n# invalid\ntry:\n    p2 = Person(name=\"Bob\", age=\"thirty\")  # string instead of int\nexcept Exception as e:\n    print(e)",
+        "peekOfCode": "p1 = Person(name=\"Alice\", age=30)\nprint(p1)\n# invalid\ntry:\n    p2 = Person(name=\"Bob\", age=\"44\")  # string instead of int\nexcept Exception as e:\n    print(e)",
         "detail": "pydantic1",
         "documentation": {}
     },
