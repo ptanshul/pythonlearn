@@ -1,18 +1,16 @@
 from pydantic import BaseModel
 
-class User(BaseModel):
-    id: int
+class Product(BaseModel):
     name: str
-    is_active: bool = True   # default value
+    price: float
+    in_stock: bool = True  # default value
 
-# Valid input
-user = User(id="1", name="Alice")
-print(user)
-# → id=1 name='Alice' is_active=True
+# ✅ valid data
+p1 = Product(name="Laptop", price=49999.99)
+print(p1)
 
-# Invalid input
+# ❌ invalid data
 try:
-    User(id="abc", name="Bob")
+    p2 = Product(name="Mouse", price="cheap")  # "cheap" is not a float
 except Exception as e:
     print(e)
-

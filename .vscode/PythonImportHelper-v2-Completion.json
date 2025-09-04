@@ -49,20 +49,20 @@
         "documentation": {}
     },
     {
-        "label": "User",
+        "label": "Product",
         "kind": 6,
         "importPath": "pydantic1",
         "description": "pydantic1",
-        "peekOfCode": "class User(BaseModel):\n    id: int\n    name: str\n    is_active: bool = True   # default value\n# Valid input\nuser = User(id=\"1\", name=\"Alice\")\nprint(user)\n# → id=1 name='Alice' is_active=True\n# Invalid input\ntry:",
+        "peekOfCode": "class Product(BaseModel):\n    name: str\n    price: float\n    in_stock: bool = True  # default value\n# ✅ valid data\np1 = Product(name=\"Laptop\", price=49999.99)\nprint(p1)\n# ❌ invalid data\ntry:\n    p2 = Product(name=\"Mouse\", price=\"cheap\")  # \"cheap\" is not a float",
         "detail": "pydantic1",
         "documentation": {}
     },
     {
-        "label": "user",
+        "label": "p1",
         "kind": 5,
         "importPath": "pydantic1",
         "description": "pydantic1",
-        "peekOfCode": "user = User(id=\"1\", name=\"Alice\")\nprint(user)\n# → id=1 name='Alice' is_active=True\n# Invalid input\ntry:\n    User(id=\"abc\", name=\"Bob\")\nexcept Exception as e:\n    print(e)",
+        "peekOfCode": "p1 = Product(name=\"Laptop\", price=49999.99)\nprint(p1)\n# ❌ invalid data\ntry:\n    p2 = Product(name=\"Mouse\", price=\"cheap\")  # \"cheap\" is not a float\nexcept Exception as e:\n    print(e)",
         "detail": "pydantic1",
         "documentation": {}
     },
