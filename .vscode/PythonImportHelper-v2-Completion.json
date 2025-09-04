@@ -1,5 +1,13 @@
 [
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "load_iris",
         "importPath": "sklearn.datasets",
         "description": "sklearn.datasets",
@@ -38,6 +46,24 @@
         "importPath": "pandas",
         "description": "pandas",
         "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "pydantic1",
+        "description": "pydantic1",
+        "peekOfCode": "class User(BaseModel):\n    id: int\n    name: str\n    is_active: bool = True   # default value\n# Valid input\nuser = User(id=\"1\", name=\"Alice\")\nprint(user)\n# → id=1 name='Alice' is_active=True\n# Invalid input\ntry:",
+        "detail": "pydantic1",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "kind": 5,
+        "importPath": "pydantic1",
+        "description": "pydantic1",
+        "peekOfCode": "user = User(id=\"1\", name=\"Alice\")\nprint(user)\n# → id=1 name='Alice' is_active=True\n# Invalid input\ntry:\n    User(id=\"abc\", name=\"Bob\")\nexcept Exception as e:\n    print(e)",
+        "detail": "pydantic1",
         "documentation": {}
     },
     {
