@@ -15,3 +15,4 @@ try:
     User(id="abc", name="Bob")
 except Exception as e:
     print(e)
+
