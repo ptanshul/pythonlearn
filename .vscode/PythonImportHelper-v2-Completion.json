@@ -1,11 +1,43 @@
 [
     {
-        "label": "torch",
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "torch",
-        "description": "torch",
-        "detail": "torch",
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
         "documentation": {}
     },
     {
@@ -189,11 +221,83 @@
         "documentation": {}
     },
     {
-        "label": "tensor_1d",
+        "label": "iris",
         "kind": 5,
         "importPath": "pytorchtest",
         "description": "pytorchtest",
-        "peekOfCode": "tensor_1d = torch.tensor([1, 2, 3])\nprint(\"1D Tensor (Vector):\")\nprint(tensor_1d)\nprint()",
+        "peekOfCode": "iris = load_iris()\nX = iris.data\ny = iris.target\n# Split data into training and test sets (80% train, 20% test)\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Create a Random Forest classifier with 100 trees\nclf = RandomForestClassifier(n_estimators=100, random_state=42)\n# Train the model\nclf.fit(X_train, y_train)\n# Predict on test set",
+        "detail": "pytorchtest",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "pytorchtest",
+        "description": "pytorchtest",
+        "peekOfCode": "X = iris.data\ny = iris.target\n# Split data into training and test sets (80% train, 20% test)\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Create a Random Forest classifier with 100 trees\nclf = RandomForestClassifier(n_estimators=100, random_state=42)\n# Train the model\nclf.fit(X_train, y_train)\n# Predict on test set\ny_pred = clf.predict(X_test)",
+        "detail": "pytorchtest",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "pytorchtest",
+        "description": "pytorchtest",
+        "peekOfCode": "y = iris.target\n# Split data into training and test sets (80% train, 20% test)\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Create a Random Forest classifier with 100 trees\nclf = RandomForestClassifier(n_estimators=100, random_state=42)\n# Train the model\nclf.fit(X_train, y_train)\n# Predict on test set\ny_pred = clf.predict(X_test)\n# Calculate accuracy",
+        "detail": "pytorchtest",
+        "documentation": {}
+    },
+    {
+        "label": "clf",
+        "kind": 5,
+        "importPath": "pytorchtest",
+        "description": "pytorchtest",
+        "peekOfCode": "clf = RandomForestClassifier(n_estimators=100, random_state=42)\n# Train the model\nclf.fit(X_train, y_train)\n# Predict on test set\ny_pred = clf.predict(X_test)\n# Calculate accuracy\naccuracy = accuracy_score(y_test, y_pred)\nprint(f\"Model Accuracy: {accuracy * 100:.2f}%\")\n# Optional: Show feature importances\nfeature_names = iris.feature_names",
+        "detail": "pytorchtest",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "pytorchtest",
+        "description": "pytorchtest",
+        "peekOfCode": "y_pred = clf.predict(X_test)\n# Calculate accuracy\naccuracy = accuracy_score(y_test, y_pred)\nprint(f\"Model Accuracy: {accuracy * 100:.2f}%\")\n# Optional: Show feature importances\nfeature_names = iris.feature_names\nimportances = clf.feature_importances_\nfeature_importance_df = pd.DataFrame({\n    \"Feature\": feature_names,\n    \"Importance\": importances",
+        "detail": "pytorchtest",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "pytorchtest",
+        "description": "pytorchtest",
+        "peekOfCode": "accuracy = accuracy_score(y_test, y_pred)\nprint(f\"Model Accuracy: {accuracy * 100:.2f}%\")\n# Optional: Show feature importances\nfeature_names = iris.feature_names\nimportances = clf.feature_importances_\nfeature_importance_df = pd.DataFrame({\n    \"Feature\": feature_names,\n    \"Importance\": importances\n}).sort_values(by=\"Importance\", ascending=False)\nprint(\"\\nFeature Importances:\")",
+        "detail": "pytorchtest",
+        "documentation": {}
+    },
+    {
+        "label": "feature_names",
+        "kind": 5,
+        "importPath": "pytorchtest",
+        "description": "pytorchtest",
+        "peekOfCode": "feature_names = iris.feature_names\nimportances = clf.feature_importances_\nfeature_importance_df = pd.DataFrame({\n    \"Feature\": feature_names,\n    \"Importance\": importances\n}).sort_values(by=\"Importance\", ascending=False)\nprint(\"\\nFeature Importances:\")\nprint(feature_importance_df)",
+        "detail": "pytorchtest",
+        "documentation": {}
+    },
+    {
+        "label": "importances",
+        "kind": 5,
+        "importPath": "pytorchtest",
+        "description": "pytorchtest",
+        "peekOfCode": "importances = clf.feature_importances_\nfeature_importance_df = pd.DataFrame({\n    \"Feature\": feature_names,\n    \"Importance\": importances\n}).sort_values(by=\"Importance\", ascending=False)\nprint(\"\\nFeature Importances:\")\nprint(feature_importance_df)",
+        "detail": "pytorchtest",
+        "documentation": {}
+    },
+    {
+        "label": "feature_importance_df",
+        "kind": 5,
+        "importPath": "pytorchtest",
+        "description": "pytorchtest",
+        "peekOfCode": "feature_importance_df = pd.DataFrame({\n    \"Feature\": feature_names,\n    \"Importance\": importances\n}).sort_values(by=\"Importance\", ascending=False)\nprint(\"\\nFeature Importances:\")\nprint(feature_importance_df)",
         "detail": "pytorchtest",
         "documentation": {}
     }
